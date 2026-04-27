@@ -1,0 +1,95 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="healthGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="healthGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="healthGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#0a0a0a"/>
+
+  <!-- 光晕效果 -->
+  <circle cx="400" cy="300" r="250" fill="url(#healthGlow)"/>
+
+  <!-- 医院建筑 -->
+  <g transform="translate(200, 180)">
+    <!-- 主楼 -->
+    <rect x="100" y="100" width="200" height="150" fill="url(#healthGrad1)" rx="4" opacity="0.9"/>
+    <!-- 红十字标志 -->
+    <rect x="175" y="120" width="50" height="50" fill="#1a1a1a" rx="4"/>
+    <rect x="195" y="125" width="10" height="40" fill="#8b5cf6" rx="2"/>
+    <rect x="180" y="140" width="40" height="10" fill="#8b5cf6" rx="2"/>
+    <!-- 窗户 -->
+    <rect x="120" y="200" width="30" height="40" fill="#1a1a1a" rx="2"/>
+    <rect x="170" y="200" width="30" height="40" fill="#1a1a1a" rx="2"/>
+    <rect x="220" y="200" width="30" height="40" fill="#1a1a1a" rx="2"/>
+    <rect x="270" y="200" width="30" height="40" fill="#1a1a1a" rx="2"/>
+  </g>
+
+  <!-- 爱心/关怀图标 -->
+  <g transform="translate(520, 140)">
+    <path d="M 50 20 C 50 20 30 5 15 20 C 0 35 15 55 50 85 C 85 55 100 35 85 20 C 70 5 50 20 50 20" fill="url(#healthGrad1)" opacity="0.3"/>
+    <path d="M 50 30 C 50 30 35 18 25 28 C 15 38 25 53 50 75 C 75 53 85 38 75 28 C 65 18 50 30 50 30" fill="url(#healthGrad1)"/>
+    <text x="50" y="60" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="bold">❤</text>
+  </g>
+
+  <!-- 老龄服务 - 老人图标 -->
+  <g transform="translate(120, 380)">
+    <circle cx="40" cy="25" r="18" fill="url(#healthGrad1)"/>
+    <path d="M 20 65 Q 20 40 40 40 Q 60 40 60 65 L 60 70 L 20 70 Z" fill="url(#healthGrad1)"/>
+    <!-- 拐杖 -->
+    <line x1="65" y1="45" x2="65" y2="75" stroke="#8b5cf6" stroke-width="3"/>
+    <path d="M 65 45 Q 70 40 68 42" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+    <text x="40" y="88" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">老龄服务</text>
+  </g>
+
+  <!-- 健康咨询 - 听诊器图标 -->
+  <g transform="translate(240, 380)">
+    <circle cx="25" cy="25" r="15" fill="#1a1a1a" stroke="url(#healthGrad1)" stroke-width="2"/>
+    <circle cx="55" cy="25" r="8" fill="#1a1a1a" stroke="url(#healthGrad2)" stroke-width="2"/>
+    <path d="M 38 20 Q 42 15 47 18" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+    <path d="M 38 30 Q 42 35 47 32" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+    <text x="40" y="88" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">健康咨询</text>
+  </g>
+
+  <!-- 语音助手 - 麦克风图标 -->
+  <g transform="translate(360, 380)">
+    <rect x="25" y="10" width="30" height="45" fill="#1a1a1a" stroke="url(#healthGrad1)" stroke-width="2" rx="15"/>
+    <line x1="40" y1="55" x2="40" y2="70" stroke="#8b5cf6" stroke-width="3"/>
+    <path d="M 25 70 L 55 70" stroke="#8b5cf6" stroke-width="3"/>
+    <!-- 声波效果 -->
+    <path d="M 15 25 Q 10 35 15 45" stroke="#6366f1" stroke-width="2" fill="none"/>
+    <path d="M 65 25 Q 70 35 65 45" stroke="#6366f1" stroke-width="2" fill="none"/>
+    <text x="40" y="92" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">语音助手</text>
+  </g>
+
+  <!-- 心理关怀 - 大脑/思维图标 -->
+  <g transform="translate(480, 380)">
+    <ellipse cx="40" cy="35" rx="35" ry="30" fill="#1a1a1a" stroke="url(#healthGrad1)" stroke-width="2"/>
+    <!-- 脑回路 -->
+    <circle cx="30" cy="25" r="5" fill="url(#healthGrad1)"/>
+    <circle cx="50" cy="25" r="5" fill="url(#healthGrad2)"/>
+    <circle cx="40" cy="45" r="5" fill="#8b5cf6"/>
+    <line x1="30" y1="25" x2="40" y2="35" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="50" y1="25" x2="40" y2="35" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="40" y1="45" x2="40" y2="35" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="40" y="92" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">心理关怀</text>
+  </g>
+
+  <!-- 装饰性心电图 -->
+  <g transform="translate(550, 220)" stroke="#8b5cf6" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M 0 25 L 10 25 L 15 10 L 20 40 L 25 20 L 30 25 L 40 25"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="400" y="560" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold" font-family="sans-serif">医疗、养老与健康服务</text>
+</svg>

@@ -1,0 +1,101 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="case2Grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="case2Grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="case2Glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#0a0a0a"/>
+
+  <!-- 光晕效果 -->
+  <circle cx="400" cy="300" r="250" fill="url(#case2Glow)"/>
+
+  <!-- 文档/招标文件背景 -->
+  <g transform="translate(150, 120)">
+    <!-- 主文档 -->
+    <rect x="100" y="50" width="280" height="380" fill="#1a1a1a" stroke="url(#case2Grad1)" stroke-width="2" rx="8"/>
+    <!-- 文档标题 -->
+    <rect x="120" y="70" width="240" height="30" fill="url(#case2Grad1)" opacity="0.5" rx="4"/>
+    <rect x="130" y="80" width="180" height="12" fill="#ffffff" rx="2"/>
+    <!-- 文档内容 -->
+    <g fill="#6366f1" opacity="0.6">
+      <rect x="120" y="120" width="240" height="8" rx="2"/>
+      <rect x="120" y="135" width="240" height="8" rx="2"/>
+      <rect x="120" y="150" width="240" height="8" rx="2"/>
+      <rect x="120" y="165" width="200" height="8" rx="2"/>
+      <rect x="120" y="190" width="240" height="8" rx="2"/>
+      <rect x="120" y="205" width="240" height="8" rx="2"/>
+      <rect x="120" y="220" width="240" height="8" rx="2"/>
+      <rect x="120" y="235" width="240" height="8" rx="2"/>
+      <rect x="120" y="260" width="240" height="8" rx="2"/>
+      <rect x="120" y="275" width="240" height="8" rx="2"/>
+      <rect x="120" y="290" width="200" height="8" rx="2"/>
+      <rect x="120" y="320" width="240" height="8" rx="2"/>
+      <rect x="120" y="335" width="240" height="8" rx="2"/>
+      <rect x="120" y="350" width="240" height="8" rx="2"/>
+    </g>
+    <!-- 印章/审批标记 -->
+    <circle cx="320" cy="200" r="40" fill="url(#case2Grad1)" opacity="0.3"/>
+    <circle cx="320" cy="200" r="30" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="320" y="205" text-anchor="middle" fill="#8b5cf6" font-size="14" font-weight="bold">已审</text>
+  </g>
+
+  <!-- AI 审查图标 -->
+  <g transform="translate(500, 150)">
+    <!-- 放大镜 -->
+    <circle cx="70" cy="70" r="55" fill="#1a1a1a" stroke="url(#case2Grad1)" stroke-width="4"/>
+    <circle cx="70" cy="70" r="45" fill="url(#case2Grad1)" opacity="0.2"/>
+    <!-- 镜片内容 - 对勾 -->
+    <path d="M 45 70 L 65 90 L 95 50" stroke="#8b5cf6" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- 镜柄 -->
+    <rect x="115" y="115" width="20" height="60" fill="url(#case2Grad2)" rx="10" transform="rotate(45 125 145)"/>
+  </g>
+
+  <!-- 审查流程指示器 -->
+  <g transform="translate(520, 320)">
+    <circle cx="30" cy="30" r="25" fill="#1a1a1a" stroke="url(#case2Grad1)" stroke-width="2"/>
+    <path d="M 30 15 L 30 30 L 45 30" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+    <text x="30" y="75" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">自动审查</text>
+  </g>
+
+  <g transform="translate(620, 320)">
+    <circle cx="30" cy="30" r="25" fill="#1a1a1a" stroke="url(#case2Grad2)" stroke-width="2"/>
+    <path d="M 20 30 L 30 40 L 45 20" stroke="#6366f1" stroke-width="3" fill="none"/>
+    <text x="30" y="75" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">智能校验</text>
+  </g>
+
+  <g transform="translate(720, 320)">
+    <circle cx="30" cy="30" r="25" fill="#1a1a1a" stroke="#8b5cf6" stroke-width="2"/>
+    <rect x="20" y="20" width="20" height="20" fill="#8b5cf6" rx="2"/>
+    <text x="30" y="75" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">生成报告</text>
+  </g>
+
+  <!-- 功能标签 -->
+  <g transform="translate(150, 500)">
+    <rect x="0" y="0" width="140" height="50" fill="#1a1a1a" stroke="url(#case2Grad1)" stroke-width="2" rx="10"/>
+    <text x="70" y="30" text-anchor="middle" fill="#ffffff" font-size="14" font-family="sans-serif">招标文件辅助生成</text>
+  </g>
+
+  <g transform="translate(310, 500)">
+    <rect x="0" y="0" width="100" height="50" fill="#1a1a1a" stroke="url(#case2Grad2)" stroke-width="2" rx="10"/>
+    <text x="50" y="30" text-anchor="middle" fill="#ffffff" font-size="14" font-family="sans-serif">智能审查</text>
+  </g>
+
+  <g transform="translate(430, 500)">
+    <rect x="0" y="0" width="140" height="50" fill="#1a1a1a" stroke="#8b5cf6" stroke-width="2" rx="10"/>
+    <text x="70" y="30" text-anchor="middle" fill="#ffffff" font-size="14" font-family="sans-serif">全流程自动化</text>
+  </g>
+
+  <!-- 标题 -->
+  <text x="400" y="570" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="sans-serif">某招标集团智慧招标平台</text>
+</svg>

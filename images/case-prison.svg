@@ -1,0 +1,105 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="case4Grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="case4Grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="case4Glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#0a0a0a"/>
+
+  <!-- 光晕效果 -->
+  <circle cx="400" cy="300" r="250" fill="url(#case4Glow)"/>
+
+  <!-- 监狱建筑轮廓 -->
+  <g transform="translate(200, 120)">
+    <!-- 主建筑 -->
+    <rect x="100" y="80" width="200" height="180" fill="#1a1a1a" stroke="url(#case4Grad1)" stroke-width="2" rx="4"/>
+    <!-- 窗户/栏杆 -->
+    <g stroke="#8b5cf6" stroke-width="3">
+      <line x1="130" y1="100" x2="130" y2="140"/>
+      <line x1="145" y1="100" x2="145" y2="140"/>
+      <line x1="160" y1="100" x2="160" y2="140"/>
+      <line x1="125" y1="115" x2="165" y2="115"/>
+      <line x1="125" y1="130" x2="165" y2="130"/>
+    </g>
+    <g stroke="#6366f1" stroke-width="3">
+      <line x1="210" y1="100" x2="210" y2="140"/>
+      <line x1="225" y1="100" x2="225" y2="140"/>
+      <line x1="240" y1="100" x2="240" y2="140"/>
+      <line x1="205" y1="115" x2="245" y2="115"/>
+      <line x1="205" y1="130" x2="245" y2="130"/>
+    </g>
+    <!-- 屋顶 -->
+    <polygon points="100,80 200,40 300,80" fill="url(#case4Grad2)" opacity="0.6"/>
+    <!-- 瞭望塔 -->
+    <rect x="260" y="50" width="40" height="210" fill="#1a1a1a" stroke="url(#case4Grad1)" stroke-width="2"/>
+    <rect x="265" y="60" width="30" height="20" fill="#8b5cf6" opacity="0.3"/>
+  </g>
+
+  <!-- AI 管理系统核心 -->
+  <g transform="translate(550, 180)">
+    <!-- 中央处理器/AI 核心 -->
+    <circle cx="80" cy="80" r="70" fill="#1a1a1a" stroke="url(#case4Grad1)" stroke-width="3"/>
+    <circle cx="80" cy="80" r="50" fill="url(#case4Grad1)" opacity="0.2"/>
+    <circle cx="80" cy="80" r="30" fill="url(#case4Grad1)" opacity="0.4"/>
+    <circle cx="80" cy="80" r="15" fill="url(#case4Grad1)"/>
+    <!-- 连接线向外延伸 -->
+    <line x1="80" y1="10" x2="80" y2="-30" stroke="#8b5cf6" stroke-width="3"/>
+    <line x1="150" y1="80" x2="190" y2="80" stroke="#8b5cf6" stroke-width="3"/>
+    <line x1="80" y1="150" x2="80" y2="190" stroke="#8b5cf6" stroke-width="3"/>
+    <line x1="10" y1="80" x2="-30" y2="80" stroke="#8b5cf6" stroke-width="3"/>
+    <!-- 数据节点 -->
+    <circle cx="80" cy="-30" r="10" fill="url(#case4Grad2)"/>
+    <circle cx="190" cy="80" r="10" fill="url(#case4Grad2)"/>
+    <circle cx="80" cy="190" r="10" fill="url(#case4Grad2)"/>
+    <circle cx="-30" cy="80" r="10" fill="url(#case4Grad2)"/>
+  </g>
+
+  <!-- 功能模块 -->
+  <g transform="translate(150, 380)">
+    <rect x="0" y="0" width="100" height="80" fill="#1a1a1a" stroke="url(#case4Grad1)" stroke-width="2" rx="10"/>
+    <!-- 监控图标 -->
+    <circle cx="50" cy="30" r="20" fill="url(#case4Grad1)" opacity="0.5"/>
+    <circle cx="50" cy="30" r="12" fill="#8b5cf6"/>
+    <circle cx="50" cy="30" r="5" fill="#ffffff"/>
+    <text x="50" y="65" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">智能管理</text>
+  </g>
+
+  <g transform="translate(270, 380)">
+    <rect x="0" y="0" width="100" height="80" fill="#1a1a1a" stroke="url(#case4Grad2)" stroke-width="2" rx="10"/>
+    <!-- 教育图标 - 书本 */}
+    <path d="M 30 25 L 50 18 L 70 25 L 70 45 L 50 38 L 30 45 Z" fill="#1a1a1a" stroke="#6366f1" stroke-width="2"/>
+    <path d="M 50 18 L 50 38" stroke="#6366f1" stroke-width="2"/>
+    <text x="50" y="65" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">教育改造</text>
+  </g>
+
+  <g transform="translate(390, 380)">
+    <rect x="0" y="0" width="100" height="80" fill="#1a1a1a" stroke="#8b5cf6" stroke-width="2" rx="10"/>
+    <!-- 心理关怀 - 爱心 */}
+    <path d="M 50 20 C 50 20 35 8 25 18 C 15 28 25 43 50 58 C 75 43 85 28 75 18 C 65 8 50 20 50 20" fill="#8b5cf6"/>
+    <text x="50" y="75" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">心理关怀</text>
+  </g>
+
+  <g transform="translate(510, 380)">
+    <rect x="0" y="0" width="100" height="80" fill="#1a1a1a" stroke="url(#case4Grad1)" stroke-width="2" rx="10"/>
+    <!-- 数据分析 - 图表 */}
+    <rect x="20" y="30" width="15" height="30" fill="url(#case4Grad1)"/>
+    <rect x="40" y="22" width="15" height="38" fill="url(#case4Grad2)"/>
+    <rect x="60" y="35" width="15" height="25" fill="#8b5cf6"/>
+    <text x="50" y="75" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">数据分析</text>
+  </g>
+
+  <!-- 标题 -->
+  <text x="400" y="530" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="sans-serif">某监狱 AI 系统</text>
+  <text x="400" y="565" text-anchor="middle" fill="#a1a1aa" font-size="16" font-family="sans-serif">司法监狱行业典型案例</text>
+</svg>

@@ -1,0 +1,127 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="energyGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="energyGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="energyGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#0a0a0a"/>
+
+  <!-- 光晕效果 -->
+  <circle cx="400" cy="300" r="250" fill="url(#energyGlow)"/>
+
+  <!-- 风力发电机 -->
+  <g transform="translate(150, 200)">
+    <!-- 塔 -->
+    <rect x="45" y="80" width="20" height="120" fill="url(#energyGrad2)" opacity="0.8"/>
+    <!-- 机舱 -->
+    <rect x="35" y="70" width="40" height="25" fill="url(#energyGrad1)" rx="4"/>
+    <!-- 叶片 -->
+    <g transform="translate(55, 82)">
+      <ellipse cx="0" cy="-35" rx="8" ry="35" fill="#8b5cf6" opacity="0.8"/>
+      <ellipse cx="30" cy="20" rx="8" ry="35" fill="#6366f1" opacity="0.8" transform="rotate(120)"/>
+      <ellipse cx="-30" cy="20" rx="8" ry="35" fill="#3b82f6" opacity="0.8" transform="rotate(-120)"/>
+    </g>
+  </g>
+
+  <!-- 工厂建筑 -->
+  <g transform="translate(300, 220)">
+    <!-- 主建筑 -->
+    <rect x="0" y="50" width="150" height="100" fill="url(#energyGrad1)" rx="4" opacity="0.9"/>
+    <!-- 窗户 -->
+    <rect x="15" y="65" width="30" height="35" fill="#1a1a1a" rx="2"/>
+    <rect x="55" y="65" width="30" height="35" fill="#1a1a1a" rx="2"/>
+    <rect x="95" y="65" width="30" height="35" fill="#1a1a1a" rx="2"/>
+    <!-- 烟囱 -->
+    <rect x="110" y="20" width="25" height="40" fill="#1a1a1a" stroke="url(#energyGrad2)" stroke-width="2"/>
+    <!-- 烟雾/能量效果 -->
+    <circle cx="122" cy="15" r="8" fill="#8b5cf6" opacity="0.4"/>
+    <circle cx="122" cy="5" r="6" fill="#6366f1" opacity="0.3"/>
+  </g>
+
+  <!-- 太阳能板 -->
+  <g transform="translate(520, 250)">
+    <rect x="0" y="30" width="100" height="60" fill="#1a1a1a" stroke="url(#energyGrad1)" stroke-width="2" rx="4"/>
+    <!-- 太阳能网格 -->
+    <g stroke="#8b5cf6" stroke-width="2">
+      <line x1="0" y1="30" x2="100" y2="30"/>
+      <line x1="0" y1="50" x2="100" y2="50"/>
+      <line x1="0" y1="70" x2="100" y2="70"/>
+      <line x1="0" y1="90" x2="100" y2="90"/>
+      <line x1="25" y1="30" x2="25" y2="90"/>
+      <line x1="50" y1="30" x2="50" y2="90"/>
+      <line x1="75" y1="30" x2="75" y2="90"/>
+    </g>
+    <!-- 阳光效果 -->
+    <circle cx="80" cy="15" r="12" fill="#8b5cf6" opacity="0.3"/>
+  </g>
+
+  <!-- 新能源管理 - 电池图标 -->
+  <g transform="translate(120, 380)">
+    <rect x="10" y="20" width="60" height="40" fill="#1a1a1a" stroke="url(#energyGrad1)" stroke-width="2" rx="4"/>
+    <rect x="70" y="30" width="8" height="20" fill="url(#energyGrad1)" rx="2"/>
+    <!-- 电量指示 -->
+    <rect x="15" y="25" width="15" height="30" fill="url(#energyGrad1)"/>
+    <rect x="33" y="25" width="15" height="30" fill="url(#energyGrad2)"/>
+    <rect x="51" y="25" width="15" height="30" fill="#8b5cf6" opacity="0.5"/>
+    <!-- 闪电符号 -->
+    <polygon points="55,15 60,25 55,25 58,35 48,22 53,22" fill="#8b5cf6"/>
+    <text x="40" y="85" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">能源管理</text>
+  </g>
+
+  <!-- 流程自动化 - 齿轮图标 -->
+  <g transform="translate(260, 380)">
+    <circle cx="40" cy="35" r="35" fill="#1a1a1a" stroke="url(#energyGrad1)" stroke-width="2"/>
+    <!-- 齿轮齿 -->
+    <g stroke="url(#energyGrad1)" stroke-width="3">
+      <line x1="40" y1="0" x2="40" y2="8"/>
+      <line x1="40" y1="62" x2="40" y2="70"/>
+      <line x1="5" y1="35" x2="13" y2="35"/>
+      <line x1="67" y1="35" x2="75" y2="35"/>
+    </g>
+    <!-- 内部流程箭头 -->
+    <path d="M 25 35 Q 35 20 45 35 Q 55 50 40 50 Q 30 50 25 35" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+    <text x="40" y="85" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">流程自动化</text>
+  </g>
+
+  <!-- 项目管理 - 甘特图/图表 -->
+  <g transform="translate(380, 380)">
+    <rect x="0" y="0" width="80" height="70" fill="#1a1a1a" stroke="url(#energyGrad2)" stroke-width="2" rx="4"/>
+    <!-- 进度条 -->
+    <rect x="10" y="15" width="50" height="10" fill="url(#energyGrad1)" rx="2"/>
+    <rect x="10" y="30" width="35" height="10" fill="url(#energyGrad2)" rx="2"/>
+    <rect x="10" y="45" width="60" height="10" fill="#8b5cf6" rx="2"/>
+    <text x="40" y="85" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">项目管理</text>
+  </g>
+
+  <!-- 安全预警 - 盾牌图标 -->
+  <g transform="translate(520, 380)">
+    <path d="M 40 10 L 65 20 L 65 45 Q 65 60 40 70 Q 15 60 15 45 L 15 20 Z" fill="#1a1a1a" stroke="url(#energyGrad1)" stroke-width="2"/>
+    <!-- 警告标志 -->
+    <polygon points="40,25 50,40 30,40" fill="#8b5cf6"/>
+    <rect x="38" y="32" width="4" height="6" fill="#1a1a1a"/>
+    <circle cx="40" cy="45" r="3" fill="#1a1a1a"/>
+    <text x="40" y="85" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">安全预警</text>
+  </g>
+
+  <!-- 高压电塔 -->
+  <g transform="translate(650, 200)" opacity="0.7">
+    <path d="M 30 150 L 40 20 L 50 150" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+    <line x1="20" y1="50" x2="60" y2="50" stroke="#6366f1" stroke-width="2"/>
+    <line x1="15" y1="90" x2="65" y2="90" stroke="#6366f1" stroke-width="2"/>
+    <line x1="10" y1="130" x2="70" y2="130" stroke="#6366f1" stroke-width="2"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="400" y="560" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold" font-family="sans-serif">能源与工业</text>
+</svg>

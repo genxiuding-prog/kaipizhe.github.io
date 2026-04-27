@@ -1,0 +1,102 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="travelGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="travelGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="travelGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#0a0a0a"/>
+
+  <!-- 光晕效果 -->
+  <circle cx="400" cy="300" r="250" fill="url(#travelGlow)"/>
+
+  <!-- 山景/旅游景点 -->
+  <g transform="translate(150, 200)">
+    <!-- 远山 -->
+    <path d="M 0 150 L 80 50 L 160 150" fill="url(#travelGrad2)" opacity="0.5"/>
+    <path d="M 80 150 L 180 30 L 280 150" fill="url(#travelGrad1)" opacity="0.7"/>
+    <path d="M 180 150 L 260 60 L 340 150" fill="url(#travelGrad2)" opacity="0.6"/>
+    <!-- 近山 -->
+    <path d="M 50 150 L 120 80 L 200 150" fill="#1a1a1a" stroke="#8b5cf6" stroke-width="1"/>
+  </g>
+
+  <!-- 传统建筑/亭子 -->
+  <g transform="translate(480, 180)">
+    <!-- 屋顶 -->
+    <polygon points="60,20 100,5 140,20 150,35 50,35" fill="url(#travelGrad1)" opacity="0.9"/>
+    <polygon points="60,35 100,25 140,35" fill="url(#travelGrad2)" opacity="0.8"/>
+    <!-- 柱子 -->
+    <rect x="55" y="35" width="10" height="60" fill="#1a1a1a"/>
+    <rect x="135" y="35" width="10" height="60" fill="#1a1a1a"/>
+    <rect x="95" y="35" width="10" height="60" fill="#1a1a1a"/>
+    <!-- 基座 -->
+    <rect x="45" y="95" width="110" height="15" fill="#1a1a1a" stroke="url(#travelGrad1)" stroke-width="2"/>
+  </g>
+
+  <!-- AI 导览 - 手机/设备图标 -->
+  <g transform="translate(550, 100)">
+    <rect x="20" y="0" width="60" height="90" fill="#1a1a1a" stroke="url(#travelGrad1)" stroke-width="2" rx="8"/>
+    <rect x="25" y="10" width="50" height="60" fill="url(#travelGrad1)" opacity="0.3" rx="4"/>
+    <!-- 屏幕内容 - 地图样式 -->
+    <path d="M 30 25 L 45 35 L 60 25 L 70 40" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+    <circle cx="50" cy="45" r="5" fill="#8b5cf6"/>
+    <text x="50" y="80" text-anchor="middle" fill="#a1a1aa" font-size="10" font-family="sans-serif">AI 导览</text>
+  </g>
+
+  <!-- 旅游客服 - 耳机图标 -->
+  <g transform="translate(120, 380)">
+    <path d="M 20 40 Q 20 10 40 10 Q 60 10 60 40" stroke="url(#travelGrad1)" stroke-width="8" fill="none"/>
+    <rect x="15" y="40" width="15" height="25" fill="#1a1a1a" stroke="url(#travelGrad1)" stroke-width="2" rx="4"/>
+    <rect x="50" y="40" width="15" height="25" fill="#1a1a1a" stroke="url(#travelGrad1)" stroke-width="2" rx="4"/>
+    <line x1="40" y1="55" x2="40" y2="70" stroke="#8b5cf6" stroke-width="3"/>
+    <text x="40" y="90" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">旅游客服</text>
+  </g>
+
+  <!-- 文化活动 - 艺术调色板 -->
+  <g transform="translate(240, 380)">
+    <ellipse cx="40" cy="35" rx="35" ry="25" fill="#1a1a1a" stroke="url(#travelGrad1)" stroke-width="2"/>
+    <circle cx="25" cy="28" r="5" fill="#8b5cf6"/>
+    <circle cx="40" cy="22" r="5" fill="#6366f1"/>
+    <circle cx="55" cy="28" r="5" fill="#3b82f6"/>
+    <circle cx="30" cy="42" r="5" fill="#a78bfa"/>
+    <ellipse cx="70" cy="35" rx="15" ry="10" fill="#1a1a1a" stroke="url(#travelGrad2)" stroke-width="2"/>
+    <text x="40" y="90" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">文化活动</text>
+  </g>
+
+  <!-- 社区活动 - 人群图标 -->
+  <g transform="translate(360, 380)">
+    <circle cx="20" cy="20" r="12" fill="url(#travelGrad1)"/>
+    <path d="M 10 45 Q 10 30 20 30 Q 30 30 30 45" fill="url(#travelGrad1)"/>
+    <circle cx="50" cy="25" r="10" fill="url(#travelGrad2)"/>
+    <path d="M 42 45 Q 42 33 50 33 Q 58 33 58 45" fill="url(#travelGrad2)"/>
+    <circle cx="65" cy="20" r="8" fill="#8b5cf6"/>
+    <path d="M 58 40 Q 58 30 65 30 Q 72 30 72 40" fill="#8b5cf6"/>
+    <text x="40" y="90" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">社区活动</text>
+  </g>
+
+  <!-- 多语言标识 -->
+  <g transform="translate(520, 380)">
+    <rect x="0" y="0" width="80" height="60" fill="#1a1a1a" stroke="url(#travelGrad1)" stroke-width="2" rx="4"/>
+    <text x="40" y="20" text-anchor="middle" fill="#8b5cf6" font-size="14" font-weight="bold">文 A</text>
+    <text x="40" y="38" text-anchor="middle" fill="#6366f1" font-size="12">EN</text>
+    <text x="40" y="54" text-anchor="middle" fill="#a1a1aa" font-size="10" font-family="sans-serif">多语言</text>
+  </g>
+
+  <!-- 装饰性飞机 -->
+  <g transform="translate(600, 150)">
+    <path d="M 0 20 L 30 10 L 25 20 L 60 15 L 60 25 L 25 20 L 30 30 Z" fill="url(#travelGrad1)" opacity="0.6"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="400" y="560" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold" font-family="sans-serif">文化旅游与城市服务</text>
+</svg>

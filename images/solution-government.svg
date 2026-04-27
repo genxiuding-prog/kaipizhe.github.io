@@ -1,0 +1,98 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="govGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="govGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="govGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#0a0a0a"/>
+
+  <!-- 光晕效果 -->
+  <circle cx="400" cy="300" r="250" fill="url(#govGlow)"/>
+
+  <!-- 政府大楼建筑 -->
+  <g transform="translate(200, 180)">
+    <!-- 主楼 -->
+    <rect x="100" y="80" width="200" height="170" fill="url(#govGrad1)" rx="4" opacity="0.9"/>
+    <!-- 柱子 -->
+    <rect x="120" y="100" width="25" height="150" fill="#1a1a1a" rx="2"/>
+    <rect x="165" y="100" width="25" height="150" fill="#1a1a1a" rx="2"/>
+    <rect x="210" y="100" width="25" height="150" fill="#1a1a1a" rx="2"/>
+    <rect x="255" y="100" width="25" height="150" fill="#1a1a1a" rx="2"/>
+    <!-- 窗户 -->
+    <rect x="120" y="200" width="25" height="40" fill="#1a1a1a" rx="2"/>
+    <rect x="165" y="200" width="25" height="40" fill="#1a1a1a" rx="2"/>
+    <rect x="210" y="200" width="25" height="40" fill="#1a1a1a" rx="2"/>
+    <rect x="255" y="200" width="25" height="40" fill="#1a1a1a" rx="2"/>
+    <!-- 屋顶 -->
+    <polygon points="100,80 200,30 300,80" fill="url(#govGrad1)" opacity="0.8"/>
+  </g>
+
+  <!-- 国徽/标志元素 -->
+  <g transform="translate(370, 120)">
+    <circle cx="30" cy="30" r="25" fill="none" stroke="url(#govGrad1)" stroke-width="3"/>
+    <circle cx="30" cy="30" r="18" fill="url(#govGrad1)" opacity="0.3"/>
+    <text x="30" y="38" text-anchor="middle" fill="#8b5cf6" font-size="24" font-weight="bold">政</text>
+  </g>
+
+  <!-- 服务窗口 -->
+  <g transform="translate(520, 220)">
+    <rect x="0" y="0" width="100" height="80" fill="#1a1a1a" stroke="url(#govGrad2)" stroke-width="2" rx="8"/>
+    <rect x="10" y="10" width="60" height="40" fill="#0a0a0a" rx="4"/>
+    <rect x="80" y="25" width="15" height="15" fill="url(#govGrad1)" rx="50"/>
+    <text x="50" y="70" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">服务窗口</text>
+  </g>
+
+  <!-- 文档/政策图标 -->
+  <g transform="translate(150, 380)">
+    <rect x="0" y="0" width="70" height="90" fill="#1a1a1a" stroke="url(#govGrad1)" stroke-width="2" rx="4"/>
+    <rect x="10" y="15" width="50" height="8" fill="url(#govGrad1)" rx="2"/>
+    <rect x="10" y="30" width="50" height="4" fill="#6366f1" rx="1"/>
+    <rect x="10" y="38" width="50" height="4" fill="#6366f1" rx="1"/>
+    <rect x="10" y="46" width="50" height="4" fill="#6366f1" rx="1"/>
+    <rect x="10" y="54" width="50" height="4" fill="#6366f1" rx="1"/>
+    <rect x="20" y="70" width="30" height="12" fill="url(#govGrad1)" rx="2"/>
+    <text x="35" y="82" text-anchor="middle" fill="#ffffff" font-size="8" font-family="sans-serif">政策</text>
+  </g>
+
+  <!-- 社保图标 -->
+  <g transform="translate(260, 390)">
+    <circle cx="35" cy="35" r="30" fill="#1a1a1a" stroke="url(#govGrad2)" stroke-width="2"/>
+    <path d="M 35 15 L 35 55" stroke="url(#govGrad2)" stroke-width="3"/>
+    <path d="M 15 35 L 55 35" stroke="url(#govGrad2)" stroke-width="3"/>
+    <circle cx="35" cy="35" r="12" fill="url(#govGrad1)"/>
+    <text x="35" y="40" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">社保</text>
+  </g>
+
+  <!-- 语音助手图标 -->
+  <g transform="translate(370, 380)">
+    <rect x="15" y="0" width="40" height="70" fill="#1a1a1a" stroke="url(#govGrad1)" stroke-width="2" rx="8"/>
+    <circle cx="35" cy="55" r="8" fill="url(#govGrad1)"/>
+    <path d="M 20 20 L 20 45" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 35 20 L 35 45" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 50 20 L 50 45" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- 流程自动化图标 -->
+  <g transform="translate(480, 380)">
+    <circle cx="35" cy="35" r="30" fill="none" stroke="url(#govGrad1)" stroke-width="2"/>
+    <path d="M 35 5 L 35 20" stroke="url(#govGrad1)" stroke-width="3"/>
+    <path d="M 35 50 L 35 65" stroke="url(#govGrad1)" stroke-width="3"/>
+    <path d="M 5 35 L 20 35" stroke="url(#govGrad1)" stroke-width="3"/>
+    <path d="M 50 35 L 65 35" stroke="url(#govGrad1)" stroke-width="3"/>
+    <circle cx="35" cy="35" r="10" fill="url(#govGrad1)"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="400" y="560" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold" font-family="sans-serif">政务与公共服务</text>
+</svg>

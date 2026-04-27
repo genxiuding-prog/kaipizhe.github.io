@@ -1,0 +1,103 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="enterpriseGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="enterpriseGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="enterpriseGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#0a0a0a"/>
+
+  <!-- 光晕效果 -->
+  <circle cx="400" cy="300" r="250" fill="url(#enterpriseGlow)"/>
+
+  <!-- 办公楼建筑群 -->
+  <g transform="translate(200, 200)">
+    <!-- 主建筑 -->
+    <rect x="150" y="50" width="120" height="200" fill="url(#enterpriseGrad1)" rx="8" opacity="0.9"/>
+    <rect x="160" y="70" width="25" height="35" fill="#1a1a1a" rx="2"/>
+    <rect x="200" y="70" width="25" height="35" fill="#1a1a1a" rx="2"/>
+    <rect x="240" y="70" width="25" height="35" fill="#1a1a1a" rx="2"/>
+    <rect x="160" y="120" width="25" height="35" fill="#1a1a1a" rx="2"/>
+    <rect x="200" y="120" width="25" height="35" fill="#1a1a1a" rx="2"/>
+    <rect x="240" y="120" width="25" height="35" fill="#1a1a1a" rx="2"/>
+    <rect x="160" y="170" width="25" height="35" fill="#1a1a1a" rx="2"/>
+    <rect x="200" y="170" width="25" height="35" fill="#1a1a1a" rx="2"/>
+    <rect x="240" y="170" width="25" height="35" fill="#1a1a1a" rx="2"/>
+
+    <!-- 左侧建筑 -->
+    <rect x="50" y="120" width="80" height="130" fill="url(#enterpriseGrad2)" rx="6" opacity="0.8"/>
+    <rect x="60" y="140" width="20" height="25" fill="#1a1a1a" rx="2"/>
+    <rect x="90" y="140" width="20" height="25" fill="#1a1a1a" rx="2"/>
+    <rect x="60" y="180" width="20" height="25" fill="#1a1a1a" rx="2"/>
+    <rect x="90" y="180" width="20" height="25" fill="#1a1a1a" rx="2"/>
+
+    <!-- 右侧建筑 -->
+    <rect x="300" y="80" width="100" height="170" fill="url(#enterpriseGrad2)" rx="6" opacity="0.85"/>
+    <rect x="310" y="100" width="25" height="30" fill="#1a1a1a" rx="2"/>
+    <rect x="350" y="100" width="25" height="30" fill="#1a1a1a" rx="2"/>
+    <rect x="310" y="150" width="25" height="30" fill="#1a1a1a" rx="2"/>
+    <rect x="350" y="150" width="25" height="30" fill="#1a1a1a" rx="2"/>
+  </g>
+
+  <!-- AI 元素 - 机器人/助手图标 -->
+  <g transform="translate(520, 120)">
+    <circle cx="60" cy="60" r="50" fill="url(#enterpriseGrad1)" opacity="0.2"/>
+    <circle cx="60" cy="60" r="35" fill="none" stroke="url(#enterpriseGrad1)" stroke-width="2"/>
+    <circle cx="60" cy="45" r="12" fill="#8b5cf6"/>
+    <path d="M 45 75 Q 60 90 75 75" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+    <line x1="35" y1="55" x2="25" y2="50" stroke="#6366f1" stroke-width="3" stroke-linecap="round"/>
+    <line x1="85" y1="55" x2="95" y2="50" stroke="#6366f1" stroke-width="3" stroke-linecap="round"/>
+    <line x1="40" y1="85" x2="30" y2="95" stroke="#6366f1" stroke-width="3" stroke-linecap="round"/>
+    <line x1="80" y1="85" x2="90" y2="95" stroke="#6366f1" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- 数据流线条 -->
+  <g stroke="#8b5cf6" stroke-width="2" opacity="0.6">
+    <path d="M 100 250 L 150 250" stroke-dasharray="5,5"/>
+    <path d="M 100 280 L 150 280" stroke-dasharray="5,5"/>
+    <path d="M 100 310 L 150 310" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- 对话气泡 - 代表客服 -->
+  <g transform="translate(100, 350)">
+    <rect x="0" y="0" width="80" height="50" fill="#1a1a1a" stroke="#8b5cf6" stroke-width="2" rx="8"/>
+    <polygon points="40,50 35,55 45,55" fill="#1a1a1a" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="40" y="28" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">AI 客服</text>
+  </g>
+
+  <!-- 文档图标 - 代表会议纪要 -->
+  <g transform="translate(220, 380)">
+    <rect x="0" y="0" width="60" height="70" fill="#1a1a1a" stroke="#6366f1" stroke-width="2" rx="4"/>
+    <line x1="10" y1="15" x2="50" y2="15" stroke="#6366f1" stroke-width="2"/>
+    <line x1="10" y1="25" x2="50" y2="25" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="10" y1="35" x2="50" y2="35" stroke="#3b82f6" stroke-width="2"/>
+    <line x1="10" y1="45" x2="35" y2="45" stroke="#3b82f6" stroke-width="2"/>
+  </g>
+
+  <!-- 人物剪影 - 代表数字员工 -->
+  <g transform="translate(320, 390)">
+    <circle cx="30" cy="20" r="15" fill="url(#enterpriseGrad1)"/>
+    <path d="M 10 60 Q 10 35 30 35 Q 50 35 50 60 L 50 65 L 10 65 Z" fill="url(#enterpriseGrad1)"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="400" y="560" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold" font-family="sans-serif">企业服务与办公</text>
+
+  <!-- 装饰网格 -->
+  <g stroke="#ffffff" stroke-width="1" opacity="0.05">
+    <line x1="0" y1="0" x2="800" y2="0"/>
+    <line x1="0" y1="600" x2="800" y2="600"/>
+    <line x1="0" y1="0" x2="0" y2="600"/>
+    <line x1="800" y1="0" x2="800" y2="600"/>
+  </g>
+</svg>

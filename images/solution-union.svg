@@ -1,0 +1,107 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="unionGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="unionGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="unionGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#0a0a0a"/>
+
+  <!-- 光晕效果 -->
+  <circle cx="400" cy="300" r="250" fill="url(#unionGlow)"/>
+
+  <!-- 工会标志风格背景 -->
+  <g transform="translate(350, 150)">
+    <circle cx="50" cy="50" r="80" fill="url(#unionGrad1)" opacity="0.15"/>
+    <circle cx="50" cy="50" r="60" fill="none" stroke="url(#unionGrad1)" stroke-width="3"/>
+    <!-- 拳头/团结象征 -->
+    <path d="M 30 70 L 30 45 Q 30 35 40 35 L 50 35 Q 60 35 60 45 L 60 70" fill="url(#unionGrad1)" opacity="0.6"/>
+    <rect x="35" y="50" width="10" height="25" fill="#1a1a1a"/>
+    <rect x="45" y="50" width="10" height="25" fill="#1a1a1a"/>
+  </g>
+
+  <!-- 智慧工会 - 齿轮 + 星星 -->
+  <g transform="translate(120, 320)">
+    <!-- 齿轮背景 -->
+    <circle cx="40" cy="35" r="35" fill="#1a1a1a" stroke="url(#unionGrad1)" stroke-width="2"/>
+    <!-- 齿轮齿 -->
+    <g stroke="url(#unionGrad1)" stroke-width="3">
+      <line x1="40" y1="0" x2="40" y2="8"/>
+      <line x1="40" y1="62" x2="40" y2="70"/>
+      <line x1="5" y1="35" x2="13" y2="35"/>
+      <line x1="67" y1="35" x2="75" y2="35"/>
+      <line x1="15" y1="15" x2="20" y2="20"/>
+      <line x1="65" y1="55" x2="70" y2="60"/>
+      <line x1="65" y1="15" x2="70" y2="20"/>
+      <line x1="15" y1="55" x2="20" y2="60"/>
+    </g>
+    <!-- 内部星星 -->
+    <polygon points="40,20 43,30 53,30 45,37 48,47 40,42 32,47 35,37 27,30 37,30" fill="url(#unionGrad1)"/>
+    <text x="40" y="90" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">智慧工会</text>
+  </g>
+
+  <!-- 情绪管理 - 表情图标 -->
+  <g transform="translate(240, 320)">
+    <circle cx="40" cy="35" r="35" fill="#1a1a1a" stroke="url(#unionGrad2)" stroke-width="2"/>
+    <!-- 笑脸 -->
+    <circle cx="28" cy="28" r="5" fill="#8b5cf6"/>
+    <circle cx="52" cy="28" r="5" fill="#8b5cf6"/>
+    <path d="M 25 42 Q 40 55 55 42" stroke="#6366f1" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- 情绪波浪 -->
+    <path d="M 5 35 Q 15 30 25 35" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+    <path d="M 55 35 Q 65 30 75 35" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+    <text x="40" y="90" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">情绪管理</text>
+  </g>
+
+  <!-- 人才测评 - 图表/评估 -->
+  <g transform="translate(360, 320)">
+    <rect x="0" y="0" width="80" height="70" fill="#1a1a1a" stroke="url(#unionGrad1)" stroke-width="2" rx="4"/>
+    <!-- 柱状图 -->
+    <rect x="10" y="45" width="12" height="20" fill="url(#unionGrad1)"/>
+    <rect x="26" y="35" width="12" height="30" fill="url(#unionGrad2)"/>
+    <rect x="42" y="25" width="12" height="40" fill="#8b5cf6"/>
+    <rect x="58" y="40" width="12" height="25" fill="#6366f1"/>
+    <!-- 勾选标记 -->
+    <path d="M 65 15 L 70 20 L 78 10" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+    <text x="40" y="90" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">人才测评</text>
+  </g>
+
+  <!-- 工会流程自动化 - 流程图标 -->
+  <g transform="translate(480, 320)">
+    <circle cx="40" cy="35" r="35" fill="#1a1a1a" stroke="url(#unionGrad1)" stroke-width="2"/>
+    <!-- 流程节点 -->
+    <circle cx="40" cy="15" r="8" fill="url(#unionGrad1)"/>
+    <circle cx="60" cy="35" r="8" fill="url(#unionGrad2)"/>
+    <circle cx="40" cy="55" r="8" fill="#8b5cf6"/>
+    <circle cx="20" cy="35" r="8" fill="#6366f1"/>
+    <!-- 连接线 -->
+    <line x1="40" y1="23" x2="40" y2="47" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="40" y1="35" x2="52" y2="35" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="40" y1="35" x2="28" y2="35" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="40" y="90" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">流程自动化</text>
+  </g>
+
+  <!-- 福利/保障图标 -->
+  <g transform="translate(580, 250)">
+    <path d="M 40 10 L 70 25 L 70 50 Q 70 65 40 75 Q 10 65 10 50 L 10 25 Z" fill="#1a1a1a" stroke="url(#unionGrad1)" stroke-width="2"/>
+    <path d="M 35 35 L 45 45 L 65 25" stroke="#8b5cf6" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 装饰性握手/合作 -->
+  <g transform="translate(150, 180)" opacity="0.5">
+    <path d="M 20 40 L 40 30 L 60 40 L 50 55 L 30 55 Z" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="400" y="560" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold" font-family="sans-serif">工会组织与职工服务</text>
+</svg>

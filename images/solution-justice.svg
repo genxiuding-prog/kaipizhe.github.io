@@ -1,0 +1,121 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="justiceGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="justiceGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="justiceGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#0a0a0a"/>
+
+  <!-- 光晕效果 -->
+  <circle cx="400" cy="300" r="250" fill="url(#justiceGlow)"/>
+
+  <!-- 法院/司法建筑 -->
+  <g transform="translate(200, 160)">
+    <!-- 主楼 -->
+    <rect x="80" y="120" width="240" height="130" fill="url(#justiceGrad1)" rx="4" opacity="0.9"/>
+    <!-- 柱子 -->
+    <rect x="100" y="120" width="30" height="130" fill="#1a1a1a" rx="2"/>
+    <rect x="150" y="120" width="30" height="130" fill="#1a1a1a" rx="2"/>
+    <rect x="200" y="120" width="30" height="130" fill="#1a1a1a" rx="2"/>
+    <rect x="250" y="120" width="30" height="130" fill="#1a1a1a" rx="2"/>
+    <!-- 三角形屋顶 -->
+    <polygon points="80,120 200,60 320,120" fill="url(#justiceGrad2)" opacity="0.8"/>
+    <!-- 天窗 -->
+    <rect x="185" y="80" width="30" height="25" fill="#1a1a1a" rx="2"/>
+  </g>
+
+  <!-- 天平图标 -->
+  <g transform="translate(550, 120)">
+    <!-- 底座 -->
+    <rect x="30" y="80" width="40" height="8" fill="url(#justiceGrad1)" rx="2"/>
+    <rect x="45" y="60" width="10" height="20" fill="url(#justiceGrad1)"/>
+    <!-- 横梁 -->
+    <line x1="10" y1="55" x2="90" y2="55" stroke="url(#justiceGrad1)" stroke-width="4"/>
+    <!-- 左盘 -->
+    <line x1="10" y1="55" x2="10" y2="75" stroke="#8b5cf6" stroke-width="2"/>
+    <path d="M 5 75 L 15 75 L 15 85 L 5 85 Z" fill="#1a1a1a" stroke="#8b5cf6" stroke-width="2"/>
+    <!-- 右盘 -->
+    <line x1="90" y1="55" x2="90" y2="75" stroke="#8b5cf6" stroke-width="2"/>
+    <path d="M 85 75 L 95 75 L 95 85 L 85 85 Z" fill="#1a1a1a" stroke="#8b5cf6" stroke-width="2"/>
+    <!-- 顶部装饰 -->
+    <circle cx="50" cy="50" r="8" fill="url(#justiceGrad1)"/>
+  </g>
+
+  <!-- 监狱管理 - 建筑图标 -->
+  <g transform="translate(120, 340)">
+    <rect x="0" y="0" width="80" height="70" fill="#1a1a1a" stroke="url(#justiceGrad1)" stroke-width="2" rx="4"/>
+    <!-- 栏杆 -->
+    <line x1="15" y1="10" x2="15" y2="50" stroke="#8b5cf6" stroke-width="3"/>
+    <line x1="30" y1="10" x2="30" y2="50" stroke="#8b5cf6" stroke-width="3"/>
+    <line x1="45" y1="10" x2="45" y2="50" stroke="#8b5cf6" stroke-width="3"/>
+    <line x1="60" y1="10" x2="60" y2="50" stroke="#8b5cf6" stroke-width="3"/>
+    <line x1="10" y1="25" x2="70" y2="25" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="10" y1="40" x2="70" y2="40" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="40" y="90" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">监狱管理</text>
+  </g>
+
+  <!-- 入监教育 - 书本图标 -->
+  <g transform="translate(240, 340)">
+    <path d="M 10 20 L 40 10 L 70 20 L 70 60 L 40 50 L 10 60 Z" fill="#1a1a1a" stroke="url(#justiceGrad2)" stroke-width="2"/>
+    <path d="M 40 10 L 40 50" stroke="url(#justiceGrad2)" stroke-width="2"/>
+    <!-- 文字行 -->
+    <line x1="20" y1="28" x2="35" y2="28" stroke="#6366f1" stroke-width="2"/>
+    <line x1="20" y1="36" x2="35" y2="36" stroke="#6366f1" stroke-width="2"/>
+    <line x1="45" y1="28" x2="60" y2="28" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="45" y1="36" x2="60" y2="36" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="40" y="90" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">入监教育</text>
+  </g>
+
+  <!-- 出监教育 - 门/出口图标 -->
+  <g transform="translate(360, 340)">
+    <rect x="10" y="10" width="60" height="60" fill="#1a1a1a" stroke="url(#justiceGrad1)" stroke-width="2" rx="4"/>
+    <!-- 拱门 -->
+    <path d="M 20 60 L 20 30 Q 40 10 60 30 L 60 60" stroke="url(#justiceGrad1)" stroke-width="3" fill="none"/>
+    <!-- 光线/希望 -->
+    <line x1="40" y1="25" x2="40" y2="65" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="40" y="90" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">出监教育</text>
+  </g>
+
+  <!-- 心理关怀 - 大脑/心理图标 -->
+  <g transform="translate(480, 340)">
+    <ellipse cx="40" cy="35" rx="35" ry="30" fill="#1a1a1a" stroke="url(#justiceGrad1)" stroke-width="2"/>
+    <!-- 脑回路 -->
+    <circle cx="28" cy="25" r="6" fill="url(#justiceGrad1)" opacity="0.6"/>
+    <circle cx="52" cy="25" r="6" fill="url(#justiceGrad2)" opacity="0.6"/>
+    <circle cx="40" cy="45" r="6" fill="#8b5cf6" opacity="0.6"/>
+    <line x1="28" y1="25" x2="40" y2="35" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="52" y1="25" x2="40" y2="35" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="40" y="90" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">心理关怀</text>
+  </g>
+
+  <!-- 法律服务 - 法槌图标 -->
+  <g transform="translate(600, 340)">
+    <!-- 锤头 -->
+    <rect x="20" y="15" width="40" height="25" fill="#1a1a1a" stroke="url(#justiceGrad1)" stroke-width="2" rx="3"/>
+    <!-- 锤柄 -->
+    <rect x="35" y="40" width="10" height="35" fill="url(#justiceGrad2)" rx="2"/>
+    <!-- 底座 -->
+    <rect x="25" y="75" width="30" height="8" fill="#1a1a1a" stroke="url(#justiceGrad1)" stroke-width="2" rx="2"/>
+    <text x="40" y="100" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">法律服务</text>
+  </g>
+
+  <!-- 装饰性法徽元素 -->
+  <g transform="translate(370, 80)">
+    <circle cx="30" cy="30" r="25" fill="none" stroke="url(#justiceGrad1)" stroke-width="2"/>
+    <text x="30" y="38" text-anchor="middle" fill="#8b5cf6" font-size="24" font-weight="bold">⚖</text>
+  </g>
+
+  <!-- 标题 -->
+  <text x="400" y="560" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold" font-family="sans-serif">司法、监狱与执法行业</text>
+</svg>

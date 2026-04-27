@@ -1,0 +1,102 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="eduGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="eduGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="eduGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#0a0a0a"/>
+
+  <!-- 光晕效果 -->
+  <circle cx="400" cy="300" r="250" fill="url(#eduGlow)"/>
+
+  <!-- 学校建筑 -->
+  <g transform="translate(180, 180)">
+    <!-- 主楼 -->
+    <rect x="100" y="100" width="240" height="150" fill="url(#eduGrad1)" rx="4" opacity="0.9"/>
+    <!-- 窗户排列 -->
+    <g fill="#1a1a1a">
+      <rect x="120" y="120" width="30" height="40" rx="2"/>
+      <rect x="170" y="120" width="30" height="40" rx="2"/>
+      <rect x="220" y="120" width="30" height="40" rx="2"/>
+      <rect x="270" y="120" width="30" height="40" rx="2"/>
+      <rect x="120" y="180" width="30" height="40" rx="2"/>
+      <rect x="170" y="180" width="30" height="40" rx="2"/>
+      <rect x="220" y="180" width="30" height="40" rx="2"/>
+      <rect x="270" y="180" width="30" height="40" rx="2"/>
+    </g>
+    <!-- 屋顶 -->
+    <polygon points="100,100 220,40 340,100" fill="url(#eduGrad2)" opacity="0.8"/>
+    <!-- 门 -->
+    <rect x="185" y="200" width="70" height="50" fill="#1a1a1a" rx="4"/>
+  </g>
+
+  <!-- 书本图标 -->
+  <g transform="translate(500, 140)">
+    <path d="M 20 30 L 60 20 L 100 30 L 100 80 L 60 70 L 20 80 Z" fill="#1a1a1a" stroke="url(#eduGrad1)" stroke-width="2"/>
+    <path d="M 60 20 L 60 70" stroke="url(#eduGrad1)" stroke-width="2"/>
+    <line x1="30" y1="40" x2="50" y2="40" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="30" y1="50" x2="50" y2="50" stroke="#6366f1" stroke-width="2"/>
+    <line x1="30" y1="60" x2="50" y2="60" stroke="#6366f1" stroke-width="2"/>
+    <line x1="70" y1="40" x2="90" y2="40" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="70" y1="50" x2="90" y2="50" stroke="#6366f1" stroke-width="2"/>
+    <line x1="70" y1="60" x2="90" y2="60" stroke="#6366f1" stroke-width="2"/>
+  </g>
+
+  <!-- 教师助手 - 人物 + 书本 -->
+  <g transform="translate(150, 380)">
+    <circle cx="40" cy="25" r="18" fill="url(#eduGrad1)"/>
+    <path d="M 20 65 Q 20 40 40 40 Q 60 40 60 65 L 60 70 L 20 70 Z" fill="url(#eduGrad1)"/>
+    <rect x="45" y="45" width="25" height="30" fill="#1a1a1a" stroke="#8b5cf6" stroke-width="2" rx="2"/>
+    <line x1="50" y1="55" x2="65" y2="55" stroke="#6366f1" stroke-width="2"/>
+    <line x1="50" y1="62" x2="65" y2="62" stroke="#6366f1" stroke-width="2"/>
+    <text x="40" y="85" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">教师助手</text>
+  </g>
+
+  <!-- 学员助手 - 人物 + 笔 -->
+  <g transform="translate(270, 380)">
+    <circle cx="40" cy="25" r="18" fill="url(#eduGrad2)"/>
+    <path d="M 20 65 Q 20 40 40 40 Q 60 40 60 65 L 60 70 L 20 70 Z" fill="url(#eduGrad2)"/>
+    <line x1="55" y1="35" x2="75" y2="20" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="77" cy="18" r="4" fill="#8b5cf6"/>
+    <text x="40" y="85" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">学员助手</text>
+  </g>
+
+  <!-- 教务管理 - 图表 -->
+  <g transform="translate(390, 380)">
+    <rect x="0" y="0" width="80" height="70" fill="#1a1a1a" stroke="url(#eduGrad1)" stroke-width="2" rx="4"/>
+    <rect x="10" y="45" width="15" height="20" fill="url(#eduGrad1)"/>
+    <rect x="30" y="35" width="15" height="30" fill="url(#eduGrad2)"/>
+    <rect x="50" y="25" width="15" height="40" fill="#8b5cf6"/>
+    <text x="40" y="65" text-anchor="middle" fill="#a1a1aa" font-size="10" font-family="sans-serif">教务</text>
+  </g>
+
+  <!-- 科研支持 - 实验器材/研究 -->
+  <g transform="translate(510, 380)">
+    <path d="M 40 5 L 40 25" stroke="#8b5cf6" stroke-width="3"/>
+    <circle cx="40" cy="35" r="20" fill="#1a1a1a" stroke="url(#eduGrad1)" stroke-width="2"/>
+    <path d="M 30 30 Q 40 45 50 30" fill="url(#eduGrad1)" opacity="0.6"/>
+    <circle cx="35" cy="28" r="3" fill="#6366f1"/>
+    <circle cx="45" cy="28" r="3" fill="#6366f1"/>
+    <circle cx="40" cy="35" r="3" fill="#8b5cf6"/>
+    <text x="40" y="65" text-anchor="middle" fill="#a1a1aa" font-size="12" font-family="sans-serif">科研</text>
+  </g>
+
+  <!-- 装饰性星星/成就 -->
+  <g transform="translate(600, 100)">
+    <polygon points="30,0 35,20 55,20 40,35 45,55 30,45 15,55 20,35 5,20 25,20" fill="url(#eduGrad1)" opacity="0.6"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="400" y="560" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold" font-family="sans-serif">教育培训与党校系统</text>
+</svg>
